@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack -d --watch",
+    "dev": "rimraf dist/app.bundle.js && webpack -d --watch",
     "prod": "webpack -p"
   },
   "author": "",
@@ -16,6 +16,7 @@
     "babel-preset-stage-0": "^6.22.0",
     "json-loader": "^0.5.4",
     "mapbox-gl": "^0.33.1",
+    "rimraf": "^2.6.1",
     "transform-loader": "^0.2.4",
     "webpack": "^2.2.0",
     "webworkify-webpack": "^2.0.4"
